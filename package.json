@@ -8,8 +8,28 @@
     "start": "next start"
   },
   "dependencies": {
+    "@syncfusion/ej2-base": "20.4.51",
+    "@syncfusion/ej2-data": "^20.2.38",
+    "@syncfusion/ej2-icons": "^20.2.38",
+    "@syncfusion/ej2-react-base": "20.4.54",
+    "@syncfusion/ej2-react-buttons": "^20.2.38",
+    "@syncfusion/ej2-react-calendars": "^20.2.50",
+    "@syncfusion/ej2-react-diagrams": "^20.4.40",
+    "@syncfusion/ej2-react-dropdowns": "^20.2.40",
+    "@syncfusion/ej2-react-grids": "^20.2.36",
+    "@syncfusion/ej2-react-inputs": "^20.2.38",
+    "@syncfusion/ej2-react-navigations": "^20.4.52",
+    "@syncfusion/ej2-react-notifications": "^20.4.38",
+    "@syncfusion/ej2-react-popups": "^20.3.59",
+    "@types/node": "20.5.0",
+    "@types/react-dom": "18.2.7",
+    "@types/react": "18.2.20",
+    "i18next": "22.4.15",
     "next": "^13.0.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-error-boundary": "4.0.4",
+    "react-i18next": "^12.2.2",
+    "typescript": "5.1.6"
   }
 }

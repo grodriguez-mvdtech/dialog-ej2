@@ -1,0 +1,100 @@
+:root {
+  --screen-width: 100%;
+  --navigation-bar__site: 380px;
+  --navigation-bar__user: calc(
+    var(--screen-width)- var(--navigation-bar__site)
+  );
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+}
+/* Layout */
+#__next {
+  display: flex;
+  flex-direction: column;
+}
+
+/*  Navigation Bar  */
+
+.navigation-bar {
+  display: flex;
+  width: 100%;
+}
+
+.navigation-bar__user {
+  width: var(--navigation-bar__user);
+}
+
+.navigation-bar__site {
+  width: var(--navigation-bar__site);
+}
+
+/* Content */
+
+main {
+  /* flex-grow: 1; */
+}
+
+/* Mantenimiento de Tablas */
+
+/* .table-settings-dialog > div.e-dlg-content > div:first-child {
+  height: 100%;
+} */
+
+.table-settings-dialog--add {
+  width: 600px !important;
+}
+
+.table-settings-dialog--edit,
+/* .column-settings-dialog  */ {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.table-settings-dialog__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.table-settings-dialog__content--edit {
+  display: flex;
+}
+
+.table-settings-dialog__content__first-section {
+  display: flex;
+}
+
+.table-settings-dialog__content__form {
+  padding: 8px;
+}
+
+.table-settings-dialog__content__button-panel {
+  padding: 8px;
+  width: 50%;
+}
+
+.table-settings-dialog__content__columns {
+  width: 100%;
+}
+
+.table-settings-dialog__content__button-panel {
+  /* align-items: flex-start;
+  display: flex;
+  flex-direction: column; */
+}
+
+.button-panel__row {
+  margin: 8px 0;
+}
+
+.custom-record-form-dialog > div.e-dlg-content > div:first-child {
+  height: 100%;
+}
+
+.custom-record-form-dialog__content-wrapper {
+  height: 100%;
+}

@@ -1,0 +1,23 @@
+.pi-circle-close:before {
+  content: "\e878";
+}
+
+.pi-edit:before {
+  content: "\e730";
+}
+
+.pi-plus:before {
+  content: "\e805";
+}
+
+.pi-settings:before {
+  content: "\e880";
+}
+
+.pi-trash:before {
+  content: "\e820";
+}
+
+.pi-user:before {
+  content: "\e7b4";
+}

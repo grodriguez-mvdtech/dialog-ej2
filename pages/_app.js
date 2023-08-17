@@ -1,7 +1,24 @@
-import '../styles/globals.css'
+import "../public/styles/reset.css";
+import "../public/styles/global.css";
+import "../public/styles/fluent.css";
+import "../public/styles/icons.css";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import Head from "next/head";
+import Layout from "../components/layout/Layout";
+
+export default function App({
+  Component,
+  pageProps: { session, ...pageProps },
+}) {
+  return (
+    <>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
+  );
 }
-
-export default MyApp
