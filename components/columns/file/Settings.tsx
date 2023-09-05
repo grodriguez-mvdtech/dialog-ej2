@@ -70,7 +70,16 @@ const Settings = ({
   const { t } = useTranslation(["file-column", "columns", "common"]);
 
   const [recordData, setRecordData] = useDialogRecordDataContext<FileColumn>();
-
+  recordData.CustomConfig = {
+    isMultiple: false,
+    allowedExtensions: [],
+    minFileSize: null,
+    maxFileSize: null,
+    minFilesCount: null,
+    maxFilesCount: null,
+    maxImageHeight: null,
+    maxImageWidth: null,
+  };
   const {
     isMultiple,
     allowedExtensions,
@@ -150,7 +159,7 @@ const Settings = ({
         <MultiSelectComponent
           id="checkbox"
           dataSource={ALLOWED_EXTENSIONS}
-          enableGroupCheckBox={true}
+          // enableGroupCheckBox={true}
           fields={{ text: "value", value: "value", groupBy: "category" }}
           mode={"CheckBox"}
           placeholder={t("placeholder-select-extensions") as string}
@@ -160,9 +169,9 @@ const Settings = ({
               handleChangeCustomConfig("allowedExtensions", value);
             }
           }}
-          groupTemplate={(item: { category: string; value: string }) => (
-            <strong>{t(item.category, { ns: "common" }) as string}</strong>
-          )}
+          // groupTemplate={(item: { category: string; value: string }) => {
+          //   return t(item.category, { ns: "common" }) as string;
+          // }}
         >
           <Inject services={[CheckBoxSelection]} />
         </MultiSelectComponent>

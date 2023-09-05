@@ -1,0 +1,21 @@
+.workflow-editor__header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+}
+
+.workflow-editor__header__column-name,
+.workflow-editor__header__column-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.workflow-editor__header__column-buttons {
+  justify-content: flex-end;
+}
+
+.workflow-editor__header__column-name > button:first-child,
+.workflow-editor__header__column-buttons > button:first-child {
+  margin-right: 8px;
+}
